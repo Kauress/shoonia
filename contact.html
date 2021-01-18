@@ -87,20 +87,28 @@
                         <h1 class="text-center">Contact Me</h1>
                      <h6 class="text-right">Reach out me with your questions, the program you'd like to sign up for and a trial class.</h6>
                     </div> <!-- end of container-sm-width -->
-	<form name="contact" method="POST" data-netlify="true">
+			
+<form name="contact" method="POST" data-netlify="true">
   <p>
-    <label>Your Name: <input type="text" name="name"  style="border:none; background-color: #F5F5F5" /></label>   
+    <label>Your Name: <input type="text" name="name" /></label>   
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" style="border:none; background-color:#F5F5F5" /></label>
-  </p>
-          <p>
-    <label>Your Message: <input type="text" name="message" style="border:none; background-color:#F5F5F5" id="messageinput" /></label>
+    <label>Your Email: <input type="email" name="email" /></label>
   </p>
   <p>
-    <button type="submit" class="btn btn-lg btn-success ">Send</button>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
   </p>
 </form>
+
 
                          <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehXNaHGVHt4FCz2kepuTA94iBOe9xtXL3TIHfiz4D-jwhlew/viewform?embedded=true" width="450" height="825" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> --> 
                 </div> <!-- end of col -->
